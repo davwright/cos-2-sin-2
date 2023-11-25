@@ -71,5 +71,5 @@ results in
 $${{({a\over c})}^2}+{{({b\over c})}^2}=cos^2x+sin^2x=1.$$ 
 
 Multiplying by $c^2$ gives us the famous formula and our proof of the Pythagorean Identity  
-$$ a^2 + b^2 = c^2.$$
+$$a^2 + b^2 = c^2.$$
 
