@@ -33,7 +33,7 @@ $$cos^2x=\big({x^0\over0!}-{x^2\over2!}+{x^4\over4!}-{x^6\over6!}+...\big)*\big(
 
 $=x^0 ({ 1 \over 0!0! })-x^2 ({1\over0!2!}+{1\over2!0!})+x^4 ({1\over0!4!}+{1\over2!2!}+{1\over4!0!}) -x^6({1\over0!6!}+{1\over2!4!}+{1\over4!2!}+{1\over6!0!})+x^8(...)+... $  
 Each term from the table is included once in the infinite sum above.  
-Each double factorial term in the brackets looks like the denominator of a [binomial coefficent](https://en.wikipedia.org/wiki/Binomial_coefficient).
+Each double factorial term in the brackets looks like the denominator of a [binomial coefficent](https://en.wikipedia.org/wiki/Binomial_coefficient).  
 $$ \big(_k^n\big)={n!\over{k!(n-k)!}} $$  
 We are only missing the $n!$ term in the numerator.  
 If we multiply and divide each term by the factorial of the exponents we can make each term in the brackets a binomial coefficient.  
