@@ -3,7 +3,7 @@
 We will calculate $cos^2x+sin^2x$ from first principles for any value of x.  
 
 Consider the right-angled triangle with sides a, b and c with angle x between a and c.  
-![abc triangle](abc%20triangle.png)  
+![abc triangle](./abc%20triangle.png)  
 We need to demonstrate that 
 $$a^2+b^2 = c^2$$
 which is equivalent to demonstrating that
@@ -58,9 +58,9 @@ Combining, we get $cos^2x+sin^2x$
 $$\tag2={x^0\over0!}(_0^0)-{x^2\over2!}[(_0^2)-(_1^2)+(_2^2)]+{x^4\over4!}[(_0^4)-(_1^4)+(_2^4)-(_3^4)+(_4^4)]\\-{x^6\over6!}[(_0^6)-(_1^6)+(_2^6)-(_3^6)+(_4^6)-(_5^6)+(_6^6)]+{{x^8}\over8!}[...]-...$$
 
 We see that for each term $x^n$ we have the alternating sum of all of its binomial coefficients. The proof that this sum is zero is easy. The [Binomial Formula](https://en.wikipedia.org/wiki/Binomial_theorem) is   
-$$ (1+x)^n=∑_{k=0}^n {(_k^n)x^k}, x\in R, n\in N.$$  
-Setting $x=-1$ gives
-$$ (1-1)^n=∑_{k=0}^n {(_k^n)(-1)^k}=(_0^n)-(_1^n)+(_2^n)+(_3^n)-...(_n^n)=0, n \in N.$$
+$$(1+x)^n=∑_{k=0}^n {(_k^n)x^k}, x\in R, n\in N.$$  
+Setting $x=-1$ gives  
+$$(1-1)^n=∑_{k=0}^n {(_k^n)(-1)^k}=(_0^n)-(_1^n)+(_2^n)+(_3^n)-...(_n^n)=0, n \in N.$$  
 This means that equation (2) collapses to
 $$cos^2x+sin^2x={x^0\over0!}-{x^2\over2!}[0]+{x^4\over4!}[0]-{x^6\over6!}[0]+{x^8}[0]+...=1$$  
 
@@ -70,6 +70,6 @@ Equating (1) and (3)
 results in
 $${{({a\over c})}^2}+{{({b\over c})}^2}=cos^2x+sin^2x=1.$$ 
 
-Multiplying by $c^2$ gives us the famous formula and our proof of the Pythagorean Identity
+Multiplying by $c^2$ gives us the famous formula and our proof of the Pythagorean Identity  
 $$ a^2 + b^2 = c^2.$$
 
