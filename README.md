@@ -34,7 +34,7 @@ $$cos^2x=\big({x^0\over0!}-{x^2\over2!}+{x^4\over4!}-{x^6\over6!}+...\big)*\big(
 $=x^0 ({ 1 \over 0!0! })-x^2 ({1\over0!2!}+{1\over2!0!})+x^4 ({1\over0!4!}+{1\over2!2!}+{1\over4!0!}) -x^6({1\over0!6!}+{1\over2!4!}+{1\over4!2!}+{1\over6!0!})+x^8(...)+... $  
 Each term from the table is included once in the infinite sum above.  
 Each double factorial term in the brackets looks like the denominator of a [binomial coefficent](https://en.wikipedia.org/wiki/Binomial_coefficient).  
-$$ \big(_k^n\big)={n!\over{k!(n-k)!}} $$  
+$$\big(_k^n\big)={n!\over{k!(n-k)!}} $$  
 We are only missing the $n!$ term in the numerator.  
 If we multiply and divide each term by the factorial of the exponents we can make each term in the brackets a binomial coefficient.  
 $$={x^0\over0!}({ 0! \over 0!0! })-{x^2\over2!}({2!\over0!2!}+{2!\over2!0!})+{x^4\over4!}({4!\over0!4!}+{4!\over2!2!}+{4!\over4!0!})\\-{x^6\over6}!({6!\over0!6!}+{6!\over2!4!}+{6!\over4!2!}+{6!\over6!0!})+{x^8\over8!}(...)+... $$  
@@ -58,9 +58,9 @@ Combining, we get $cos^2x+sin^2x$
 $$\tag2={x^0\over0!}(_0^0)-{x^2\over2!}[(_0^2)-(_1^2)+(_2^2)]+{x^4\over4!}[(_0^4)-(_1^4)+(_2^4)-(_3^4)+(_4^4)]\\-{x^6\over6!}[(_0^6)-(_1^6)+(_2^6)-(_3^6)+(_4^6)-(_5^6)+(_6^6)]+{{x^8}\over8!}[...]-...$$
 
 We see that for each term $x^n$ we have the alternating sum of all of its binomial coefficients. The proof that this sum is zero is easy. The [Binomial Formula](https://en.wikipedia.org/wiki/Binomial_theorem) is   
-$$(1+x)^n=∑_{k=0}^n {(_k^n)x^k}, x\in R, n\in N.$$  
+$${(1+x)^n}=∑_{k=0}^n {(_k^n)x^k}, x\in R, n\in N.$$  
 Setting $x=-1$ gives  
-$$(1-1)^n=∑_{k=0}^n {(_k^n)(-1)^k}=(_0^n)-(_1^n)+(_2^n)+(_3^n)-...(_n^n)=0, n \in N.$$  
+$${(1-1)^n}=∑_{k=0}^n {(_k^n)(-1)^k}=(_0^n)-(_1^n)+(_2^n)+(_3^n)-...(_n^n)=0, n \in N.$$  
 This means that equation (2) collapses to
 $$cos^2x+sin^2x={x^0\over0!}-{x^2\over2!}[0]+{x^4\over4!}[0]-{x^6\over6!}[0]+{x^8}[0]+...=1$$  
 
