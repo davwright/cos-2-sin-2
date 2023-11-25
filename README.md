@@ -9,10 +9,10 @@ We can expand $cos^2x$ in this infinite table and then collection the terms diag
 $cos^2x=$
 | |$x^0$|$x^2$|$x^4$|$x^6$|...|
 |-|-|---|---|---|---|
-|$x^0$|$ 1\over0!0!$|$-1\over0!2!$|$ 1\over0!4!$|$-1\over0!6!$|...|
-|$x^2$|$-1\over2!0!$|$ 1\over2!2!$|$-1\over2!4!$|$ 1\over2!6!$|...|  
+|$x^0$|$1\over0!0!$|$-1\over0!2!$|$1\over0!4!$|$-1\over0!6!$|...|
+|$x^2$|$-1\over2!0!$|$1\over2!2!$|$-1\over2!4!$|$1\over2!6!$|...|  
 |$x^4$|$ 1\over4!0!$|$-1\over4!2!$|$ 1\over4!4!$|$-1\over4!6!$|...|  
-|$x^6$|$-1\over6!0!$|$ 1\over6!2!$|$-1\over6!4!$|$ 1\over6!6!$|...|
+|$x^6$|$-1\over6!0!$|$1\over6!2!$|$-1\over6!4!$|$1\over6!6!$|...|
 |...|...|...|...|...|...|  
 
 $=x^0 ({ 1 \over 0!0! })-x^2 ({1\over0!2!}+{1\over2!0!})+x^4 ({1\over0!4!}+{1\over2!2!}+{1\over4!0!}) -x^6({1\over0!6!}+{1\over2!4!}+{1\over4!2!}+{1\over6!0!})+x^8(...)+... $  
@@ -31,9 +31,9 @@ $=x^2 ({ 1 \over 1!1! })-x^4 ({1\over1!3!}+{1\over3!1!})+x^6 ({1\over1!5!}+{1\ov
 $=\sum_{n=0}^{\infty}(-1)^nx^{2n}\sum_{k=0}^{n}{1\over {(2k+1)!(2n-2k)!}} $
 
 Combining we get $cos^2x+sin^2x$  
-$=x^0-x^2({1\over0!2!}+{1\over2!0!}-{1\over1!1!})+x^4({1\over0!4!}+{1\over2!2!}+{1\over4!0!}-{1\over1!3!}-{1\over3!1!})-x^6(...)+... $  
+$=x^0-x^2({1\over0!2!}-{1\over1!1!}+{1\over2!0!})+x^4({1\over0!4!}-{1\over1!3!}+{1\over2!2!}-{1\over3!1!}+{1\over4!0!})-x^6(...)+... $  
 Simplifying the factorials  
-$=1-x^2({1\over2}+{1\over2}-{1\over1})+x^4({1\over24}+{1\over16}+{1\over24}-{1\over6}-{1\over6})-x^6(...)+... $  
+$=1-x^2({1\over2}-{1\over1}+{1\over2})+x^4({1\over24}+{1\over16}+{1\over24}-{1\over6}-{1\over6})-x^6(...)+... $  
 $=1-0x^2+0x^4+(...)x^6 +... $  
 
 The remainder of the proof is to show that every coefficient of $x^{2n}$ is just zero for $n>2$.   
