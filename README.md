@@ -1,6 +1,6 @@
 # A novel proof of Pythagorus' Theorem.
 
-Calculate $cos^2x+sin^2x$from first principles.  
+Calculate $cos^2x+sin^2x$ from first principles.  
 
   $cos^2x+sin^2x$ 
   $= (\sum_{n=0}^{\infty} {(-1)^nx^{2n} \over (2n)!})^2 + (\sum_{n=0}^{\infty} {(-1)^nx^{2n+1} \over (2n+1)!})^2$
@@ -15,7 +15,10 @@ $cos^2x=$
 |$x^6$|$-1\over6!0!$|$1\over6!2!$|$-1\over6!4!$|$1\over6!6!$|...|
 |...|...|...|...|...|...|  
 
-$=x^0 ({ 1 \over 0!0! })-x^2 ({1\over0!2!}+{1\over2!0!})+x^4 ({1\over0!4!}+{1\over2!2!}+{1\over4!0!}) -x^6({1\over0!6!}+{1\over2!4!}+{1\over4!2!}+{1\over6!0!})+x^8(...)+... $ 
+$=x^0 ({ 1 \over 0!0! })-x^2 ({1\over0!2!}+{1\over2!0!})+x^4 ({1\over0!4!}+{1\over2!2!}+{1\over4!0!}) -x^6({1\over0!6!}+{1\over2!4!}+{1\over4!2!}+{1\over6!0!})+x^8(...)+... $  
+If we pull out the factorial from the denominator we can make each term in the brackets just a binomial coefficient.  
+$=x^0\0! ({ 0! \over 0!0! })-x^2\2! ({2!\over0!2!}+{2!\over2!0!})+x^4\4! ({4!\over0!4!}+{4!\over2!2!}+{4!\over4!0!}) -x^6\6!({6!\over0!6!}+{6!\over2!4!}+{6!\over4!2!}+{6!\over6!0!})+x^8\over8!(...)+... $
+$=x^0\0! (\begin{pmatrix}0\\0\end{pmatrix})-x^2\2! (\begin{pmatrix}2\\0\end{pmatrix}+\begin{pmatrix}2\\2\end{pmatrix})+x^4\4! ({4!\over0!4!}+{4!\over2!2!}+{4!\over4!0!}) -x^6\6!({6!\over0!6!}+{6!\over2!4!}+{6!\over4!2!}+{6!\over6!0!})+x^8\over8!(...)+... $
 
 Similarly $sin^2x=$
 | |$x^1$|$x^3$|$x^5$|$x^7$|...|
