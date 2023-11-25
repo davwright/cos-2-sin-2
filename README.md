@@ -2,7 +2,7 @@
 
 We will calculate $cos^2x+sin^2x$ from first principles for any value of x.  
 
-We will consider the right angled triangle with sides a, b and c.
+We will consider the right angled triangle with sides a, b and c.  
 ![abc triangle](abc%20triangle.png)  
 The definition of $cos x$  and $sin x$ are
 $$cos x = {adjacent \over hypotenuse}={a\over c} $$
