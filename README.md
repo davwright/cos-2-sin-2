@@ -7,14 +7,14 @@ Consider the right-angled triangle with sides a, b and c with angle x between a 
 We need to demonstrate that 
 $$a^2+b^2 = c^2$$
 which is equivalent to demonstrating that
-$$\tag1{({a\over c})}^2+{({b\over c})}^2=1.$$
+$${({a\over c})}^2+{({b\over c})}^2=1.$$
 The definition of $cos x$  and $sin x$ are
 $$cos x = {adjacent \over hypotenuse}={a\over c}$$
 $$sin x = {opposite \over hypotenuse}= {b\over c}.$$   
 We will calculate from first principles  
-$$cos^2x+sin^2x=?$$  
+$${\tag1}{({a\over c})}^2+{({b\over c})}^2 = cos^2x+sin^2x=?$$  
 
-Geometrically we can calculate $cos x$ by unrolling [involutes](https://en.wikipedia.org/wiki/Involute) on the unit circle. The simple calculation uses only geometry and limits - it does not rely on the Pythagorean Identity.
+Geometrically we can calculate $cosx$ by unrolling [involutes](https://en.wikipedia.org/wiki/Involute) on the unit circle. The simple calculation uses only geometry and limits - it does not rely on the Pythagorean Identity and is similar to Archimedes n-gon limit technique to calculate $\pi$.
 This leads us to the following equations for $cosx$ and $sinx$ valid for any real x.  
 $$cosx=\big({x^0\over0!}-{x^2\over2!}+{x^4\over4!}-{x^6\over6!}+...\big)=∑_{n=0}^\infty {(-1)^nx^{2n} \over (2n)!}$$
 $$sinx=\big({x^1\over1!}-{x^3\over3!}+{x^54\over5!}-{x^7\over7!}+...\big)= ∑_{n=0}^\infty {(-1)^nx^{2n+1} \over (2n+1)!}$$
@@ -60,7 +60,7 @@ $$\tag2={x^0\over0!}(_0^0)-{x^2\over2!}[(_0^2)-(_1^2)+(_2^2)]+{x^4\over4!}[(_0^4
 We see that for each term $x^n$ we have the alternating sum of all of its binomial coefficients. The proof that this sum is zero is easy. The [Binomial Formula](https://en.wikipedia.org/wiki/Binomial_theorem) is   
 $${(1+x)^n}=∑_{k=0}^n {(_k^n)x^k}, x\in R, n\in N.$$  
 Setting $x=-1$ gives  
-$${(1-1)^n}=∑_{k=0}^n {(_k^n)(-1)^k}=(_0^n)-(_1^n)+(_2^n)+(_3^n)-...(_n^n)=0, n \in N.$$  
+$${(1-1)^n}=0^n=0=∑_{k=0}^n {(_k^n)(-1)^k}=(_0^n)-(_1^n)+(_2^n)+(_3^n)-...(_n^n), n \in N.$$  
 This means that equation (2) collapses to
 $$cos^2x+sin^2x={x^0\over0!}-{x^2\over2!}[0]+{x^4\over4!}[0]-{x^6\over6!}[0]+{x^8}[0]+...=1$$  
 
